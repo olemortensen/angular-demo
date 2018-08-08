@@ -30,9 +30,11 @@ describe('AppComponent', () => {
   it('should create the app', async(() => {
     expect(app).toBeTruthy();
   }));
+
   it(`should have as title 'app'`, async(() => {
     expect(app.title).toEqual('app');
   }));
+
   it('should contain a form', async(() => {
     expect(compiled.querySelector('form')).toBeTruthy();
 
