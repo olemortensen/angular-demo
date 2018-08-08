@@ -1,6 +1,9 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MyFormComponent } from './my-form.component';
+import {MyFormComponent} from './my-form.component';
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('MyFormComponent', () => {
   let component: MyFormComponent;
@@ -8,9 +11,10 @@ describe('MyFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MyFormComponent ]
+      declarations: [MyFormComponent],
+      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
