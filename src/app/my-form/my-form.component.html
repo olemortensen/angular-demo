@@ -4,12 +4,12 @@
     <tr>
       <td>
         <mat-form-field class="fullwidth">
-          <input matInput placeholder="First Name" name="firstname" [(ngModel)]="address.firstname">
+          <input matInput placeholder="First Name" name="firstname" [(ngModel)]="firstname">
         </mat-form-field>
       </td>
       <td>
         <mat-form-field class="fullwidth">
-          <input matInput placeholder="Last Name" name="lastname" [(ngModel)]="address.lastname">
+          <input matInput placeholder="Last Name" name="lastname" [(ngModel)]="lastname">
         </mat-form-field>
       </td>
     </tr>
@@ -17,7 +17,7 @@
 
   <p>
     <mat-form-field class="fullwidth">
-      <textarea matInput placeholder="Street" name="street" [(ngModel)]="address.street"></textarea>
+      <textarea matInput placeholder="Street" name="street" [(ngModel)]="street"></textarea>
     </mat-form-field>
   </p>
 
@@ -25,12 +25,12 @@
     <tr>
       <td>
         <mat-form-field class="fullwidth">
-          <input matInput placeholder="City" name="city" [(ngModel)]="address.city">
+          <input matInput placeholder="City" name="city" [(ngModel)]="city">
         </mat-form-field>
       </td>
       <td>
         <mat-form-field class="fullwidth">
-          <input matInput type="number" maxlength="5" placeholder="Postal Code" name="postalcode" [(ngModel)]="address.postalcode">
+          <input matInput type="number" maxlength="5" placeholder="Postal Code" name="postalcode" [(ngModel)]="postalcode">
         </mat-form-field>
       </td>
     </tr>

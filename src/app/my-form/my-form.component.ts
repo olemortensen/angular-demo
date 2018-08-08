@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Address} from '../address';
 
 
 @Component({
@@ -9,7 +8,11 @@ import {Address} from '../address';
 })
 export class MyFormComponent implements OnInit {
 
-  address = new Address('Pierre');
+  firstname: String;
+  lastname: String;
+  street: String;
+  city: String;
+  postalcode: String;
 
   constructor() {
   }
@@ -18,6 +21,6 @@ export class MyFormComponent implements OnInit {
   }
 
   onSubmit() {
-    alert('Thanks for submitting! Data: ' + JSON.stringify(this.address));
+    alert('Thanks for submitting! Data: ' + JSON.stringify(this));
   }
 }
