@@ -21,6 +21,6 @@ export class MyFormComponent implements OnInit {
   }
 
   onSubmit() {
-    alert('Thanks for submitting! Data: ' + JSON.stringify(this));
+    alert('Submitted Data: ' + JSON.stringify(this));
   }
 }
