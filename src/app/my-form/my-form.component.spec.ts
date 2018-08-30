@@ -28,14 +28,9 @@ describe('MyFormComponent', () => {
     expect(component).toBeTruthy();
   });
 
-
-  it('has address input elements', async(() => {
-    ['firstname', 'lastname', 'city', 'postalcode'].forEach(e => {
+  it('has all input elements', async(() => {
+    ['firstname', 'lastname', 'street', 'city', 'postalcode'].forEach(e => {
       expect(compiled.querySelector(`input[name="${e}"]`)).toBeTruthy();
     });
-  }));
-
-  it('has a street textarea element', async(() => {
-    expect(compiled.querySelector('textarea[name="street"]')).toBeTruthy();
   }));
 });

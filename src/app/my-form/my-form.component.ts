@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MyFormComponent implements OnInit {
 
+  email: String;
   firstname: String;
   lastname: String;
   street: String;

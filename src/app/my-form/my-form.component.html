@@ -1,32 +1,33 @@
 <h3>Address Form</h3>
 <form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
-  <table cellspacing="0">
-    <tr>
-      <td>
-        <input placeholder="First Name" name="firstname" [(ngModel)]="firstname">
-      </td>
-      <td>
-        <input placeholder="Last Name" name="lastname" [(ngModel)]="lastname">
-      </td>
-    </tr>
-  </table>
+  <div class="wrapper">
 
-  <p>
-    <textarea placeholder="Street" name="street" [(ngModel)]="street"></textarea>
-  </p>
+    <div class="one">
+      <input placeholder="me@example.com" type="email" size="15" name="email" [(ngModel)]="email">
+    </div>
 
-  <table class="fullwidth" cellspacing="0">
-    <tr>
-      <td>
-        <input placeholder="City" name="city" [(ngModel)]="city">
-      </td>
-      <td>
-        <input type="number" maxlength="5" placeholder="Postal Code" name="postalcode" [(ngModel)]="postalcode">
-      </td>
-    </tr>
-  </table>
+    <div class="two">
+      <input placeholder="First Name" name="firstname" type="text" size="25" [(ngModel)]="firstname">
+    </div>
 
-  <p>
-    <button type="submit">Submit</button>
-  </p>
+    <div class="three">
+      <input placeholder="Last Name" name="lastname"  type="text" size="25"[(ngModel)]="lastname">
+    </div>
+
+    <div class="four">
+      <input placeholder="Street" name="street"  type="text" size="40"[(ngModel)]="street">
+    </div>
+
+    <div class="five">
+      <input placeholder="City" name="city"  type="text" size="20"[(ngModel)]="city">
+    </div>
+
+    <div class="six">
+      <input type="number" maxlength="5" placeholder="Postal Code" size="6" name="postalcode" [(ngModel)]="postalcode">
+    </div>
+    <div class="seven">
+      <input type="submit" value="save">
+    </div>
+  </div>
+
 </form>
