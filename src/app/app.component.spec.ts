@@ -27,15 +27,15 @@ describe('AppComponent', () => {
     compiled = fixture.debugElement.nativeElement;
   });
 
-  it('should create the app', async(() => {
+  it('creates the app', async(() => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app'`, async(() => {
+  it(`has title 'app'`, async(() => {
     expect(app.title).toEqual('app');
   }));
 
-  it('should contain a form', async(() => {
+  it('contains a form', async(() => {
     expect(compiled.querySelector('form')).toBeTruthy();
 
   }));

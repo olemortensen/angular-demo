@@ -25,18 +25,18 @@ describe('MyFormComponent', () => {
     compiled = fixture.debugElement.nativeElement;
   });
 
-  it('should create the form', () => {
+  it('creates the form', () => {
     expect(component).toBeTruthy();
   });
 
 
-  it('should have address input elements', async(() => {
+  it('has address input elements', async(() => {
     ['firstname', 'lastname', 'city', 'postalcode'].forEach(e => {
       expect(compiled.querySelector(`input[name="${e}"]`)).toBeTruthy();
     });
   }));
 
-  it('should have street textarea element', async(() => {
+  it('has a street textarea element', async(() => {
     expect(compiled.querySelector('textarea[name="street"]')).toBeTruthy();
   }));
 });
