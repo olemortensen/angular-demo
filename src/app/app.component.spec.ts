@@ -1,6 +1,7 @@
 import {TestBed, async, ComponentFixture} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MyFormComponent} from './my-form/my-form.component';
 
@@ -15,7 +16,7 @@ describe('AppComponent', () => {
         AppComponent,
         MyFormComponent
       ],
-      imports: [FormsModule, BrowserAnimationsModule]
+      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule]
     }).compileComponents();
   }));
 

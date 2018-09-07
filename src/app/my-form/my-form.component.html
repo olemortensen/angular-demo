@@ -3,30 +3,43 @@
   <div class="wrapper">
 
     <div class="one">
-      <input placeholder="me@example.com" type="email" size="15" name="email" [(ngModel)]="email">
+      <mat-form-field class="fullwidth">
+        <input matInput placeholder="me@example.com" type="email" size="15" name="email" [(ngModel)]="email">
+      </mat-form-field>
     </div>
 
     <div class="two">
-      <input placeholder="First Name" name="firstname" type="text" size="25" [(ngModel)]="firstname">
+      <mat-form-field class="fullwidth">
+        <input matInput placeholder="First Name" name="firstname" type="text" size="25" [(ngModel)]="firstname">
+      </mat-form-field>
     </div>
 
     <div class="three">
-      <input placeholder="Last Name" name="lastname"  type="text" size="25"[(ngModel)]="lastname">
+      <mat-form-field class="fullwidth">
+        <input matInput placeholder="Last Name" name="lastname" type="text" size="25" [(ngModel)]="lastname">
+      </mat-form-field>
     </div>
 
     <div class="four">
-      <input placeholder="Street" name="street"  type="text" size="40"[(ngModel)]="street">
+      <mat-form-field class="fullwidth">
+        <input matInput placeholder="Street" name="street" type="text" size="40" [(ngModel)]="street">
+      </mat-form-field>
     </div>
 
     <div class="five">
-      <input placeholder="City" name="city"  type="text" size="20"[(ngModel)]="city">
+      <mat-form-field class="fullwidth">
+        <input matInput placeholder="City" name="city" type="text" size="20" [(ngModel)]="city">
+      </mat-form-field>
     </div>
 
     <div class="six">
-      <input type="number" maxlength="5" placeholder="Postal Code" size="6" name="postalcode" [(ngModel)]="postalcode">
+      <mat-form-field class="fullwidth">
+        <input matInput type="number" maxlength="5" placeholder="Postal Code" size="6" name="postalcode"
+               [(ngModel)]="postalcode">
+      </mat-form-field>
     </div>
     <div class="seven">
-      <input type="submit" value="save">
+      <button type="submit" mat-raised-button>Save</button>
     </div>
   </div>
 
