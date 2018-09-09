@@ -1,9 +1,10 @@
-import {TestBed, async, ComponentFixture} from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MyFormComponent} from './my-form/my-form.component';
+import {HttpClientModule} from '@angular/common/http';
 
 describe('AppComponent', () => {
   let app: AppComponent;
@@ -14,9 +15,9 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        MyFormComponent
+        MyFormComponent,
       ],
-      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule]
+      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule, HttpClientModule]
     }).compileComponents();
   }));
 

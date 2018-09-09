@@ -4,6 +4,8 @@ import {MyFormComponent} from './my-form.component';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule, MatInputModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from "@angular/common/http";
+
 
 describe('MyFormComponent', () => {
   let component: MyFormComponent;
@@ -13,7 +15,8 @@ describe('MyFormComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [MyFormComponent],
-      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule]
+      imports: [FormsModule, MatFormFieldModule, MatInputModule, BrowserAnimationsModule,
+        HttpClientModule]
     })
       .compileComponents();
   }));
