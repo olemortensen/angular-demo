@@ -11,13 +11,14 @@ import {HttpErrorResponse} from "@angular/common/http";
 })
 export class MyFormComponent implements OnInit {
 
-  email: String;
-  firstname: String;
-  lastname: String;
-  street: String;
-  city: String;
-  postalcode: String;
-  userService
+  email: string;
+  firstname: string;
+  lastname: string;
+  street: string;
+  city: string;
+  postalcode: string;
+  birthdate: string;
+  userService: UserService;
 
   constructor(userService: UserService) {
     this.userService = userService;
